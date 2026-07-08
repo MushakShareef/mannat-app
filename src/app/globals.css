@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #0b1a17;
+  --bg-panel: #10231f;
+  --gold: #d4af37;
+  --gold-soft: #e8cf7d;
+  --teal: #3a7d70;
+  --ivory: #ede6d6;
+  --ivory-dim: #c9c0ab;
+}
+
+@theme inline {
+  --color-deep: var(--bg-deep);
+  --color-panel: var(--bg-panel);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-teal: var(--teal);
+  --color-ivory: var(--ivory);
+  --color-ivory-dim: var(--ivory-dim);
+  --font-display: var(--font-amiri);
+  --font-body: var(--font-mulish);
+  --font-urdu: var(--font-nastaliq);
+}
+
+body {
+  background: var(--bg-deep);
+  color: var(--ivory);
+  font-family: var(--font-body), sans-serif;
+}
+
+.font-urdu {
+  font-family: var(--font-nastaliq), serif;
+  direction: rtl;
+  line-height: 2.4;
+}
+
+.font-display {
+  font-family: var(--font-amiri), serif;
+}
+
+.glow-radial {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(212, 175, 55, 0.16) 0%,
+    rgba(212, 175, 55, 0.05) 35%,
+    rgba(11, 26, 23, 0) 70%
+  );
+}
+
+.gold-rule {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold) 50%,
+    transparent 100%
+  );
+  height: 1px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--bg-deep);
+}
