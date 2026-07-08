@@ -57,8 +57,8 @@ export default function Home() {
             },
             
             {
-              label: "IRM-03",
-              src: "/images/IRM-03.jpg"
+              label: "wisdom",
+              src: "/images/wisdom.jpg"
             },
           ]}
         />
