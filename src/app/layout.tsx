@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Amiri, Mulish, Noto_Nastaliq_Urdu } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+
 
 const amiri = Amiri({
   variable: "--font-amiri",
@@ -39,6 +41,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-deep text-ivory">
         {children}
+        <Analytics />
       </body>
     </html>
   );
